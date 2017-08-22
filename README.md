@@ -31,6 +31,13 @@ Example, all together
 	
 	$ php simulationmodel.php -f -m -q -c
 	$ php simulationmodel.php -f -m 14,7,8,5,13 -c 3 -q 100
+	
+# Attachment
+
+* `simulationIdea.pdf` describes the idea of solution
+* `classDiagram.png` the diagram of the simulation classes
+* `example` screenshot of my running example 
+
 
 
 Looking forward to your comments
