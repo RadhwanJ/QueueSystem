@@ -36,7 +36,9 @@ Example, all together
 
 * `simulationIdea.pdf` describes the idea of solution
 * `classDiagram.png` the diagram of the simulation classes
-* `example` screenshot of my running example 
+* `example.png` screenshot of my running example 
+* `queuemodel.php` includes all the classes of queueing system (i.e. the solution)
+* `simulationmodel.php` parses the user inputs and runs the solution
 
 
 
