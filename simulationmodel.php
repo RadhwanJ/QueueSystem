@@ -59,7 +59,6 @@ if($criteria < 1) {
     exit();
 }
 
-
 /**
  * @var Producer        $producer       create a new producer 
  * @var ConsumerGroup   $consumerGroup  create a new consumer group 
@@ -119,7 +118,6 @@ foreach ($messagesNumber as $key => $messagePackage) {
     if($consumer[0]->waitFullBuffer($queueFull)) {
 
         printf($format2, "".$messagePackage,"Scaling", "-", "-");
-    
         $note           = "No change";
         $requiredScale  = $consumerGroup->autoScaleComsumerGroup($queue, $criteria);
         
@@ -146,7 +144,7 @@ foreach ($messagesNumber as $key => $messagePackage) {
                 $consumerGroup->detachFromGroup($consumer[$actualCounsumers-1]);
                 $note = "Decreased";
             }
-    
+            
             $requiredScale = $consumerGroup->autoScaleComsumerGroup($queue, $criteria);
         }
         
